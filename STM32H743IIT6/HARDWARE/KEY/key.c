@@ -20,6 +20,7 @@ void KEY_Init(void)
 
 	__HAL_RCC_GPIOA_CLK_ENABLE();           //开启GPIOA时钟
     __HAL_RCC_GPIOH_CLK_ENABLE();           //开启GPIOH时钟
+//	__HAL_RCC_GPIOE_CLK_ENABLE();
 
     GPIO_Initure.Pin=GPIO_PIN_0;            //PA0
     GPIO_Initure.Mode=GPIO_MODE_INPUT;      //输入
@@ -33,6 +34,12 @@ void KEY_Init(void)
     GPIO_Initure.Pull=GPIO_PULLUP;          //上拉
     GPIO_Initure.Speed=GPIO_SPEED_FREQ_VERY_HIGH;     //高速
     HAL_GPIO_Init(GPIOH,&GPIO_Initure);
+	
+    GPIO_Initure.Pin=GPIO_PIN_11;            //PA0
+    GPIO_Initure.Mode=GPIO_MODE_INPUT;      //输入
+    GPIO_Initure.Pull=GPIO_PULLDOWN;        //下拉
+    GPIO_Initure.Speed=GPIO_SPEED_FREQ_VERY_HIGH;     //高速
+    HAL_GPIO_Init(GPIOE,&GPIO_Initure);
 }
 
 //按键处理函数

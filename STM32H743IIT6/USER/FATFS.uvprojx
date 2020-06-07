@@ -138,7 +138,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER, STM32H743xx,MPL_LOG_NDEBUG=1,EMPL,MPU9250,EMPL_TARGET_STM32F4</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\USER;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HALLIB\STM32H7xx_HAL_Driver\Inc;..\USMART;..\MALLOC;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\TIMER;..\HARDWARE\MPU;..\HARDWARE\LCD;..\HARDWARE\SDRAM;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\PCF8574;..\HARDWARE\QSPI;..\HARDWARE\W25QXX;..\HARDWARE\SPI;..\HARDWARE\SDMMC;..\HARDWARE\NAND;..\HARDWARE\QSPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\source;..\HARDWARE\afe4490;..\HARDWARE\SPI</IncludePath>
+              <IncludePath>..\CORE;..\USER;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HALLIB\STM32H7xx_HAL_Driver\Inc;..\USMART;..\MALLOC;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\TIMER;..\HARDWARE\MPU;..\HARDWARE\LCD;..\HARDWARE\SDRAM;..\HARDWARE\24CXX;..\HARDWARE\IIC;..\HARDWARE\PCF8574;..\HARDWARE\QSPI;..\HARDWARE\W25QXX;..\HARDWARE\SPI;..\HARDWARE\SDMMC;..\HARDWARE\NAND;..\HARDWARE\QSPI;..\HARDWARE\W25QXX;..\FATFS\exfuns;..\FATFS\source;..\HARDWARE\afe4490;..\HARDWARE\SPI;..\HARDWARE\EXTI</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -675,6 +675,11 @@
               <FileName>spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\SPI\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\EXTI\exti.c</FilePath>
             </File>
           </Files>
         </Group>

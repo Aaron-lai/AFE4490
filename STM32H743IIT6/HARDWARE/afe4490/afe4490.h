@@ -55,8 +55,12 @@
 
 //定义AFE4490操作引脚，芯片2
 #define AFE4490_STE_2(n)(n?HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_SET):HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_RESET))
+#define AFE4490_AFEPDN_2(n)(n?HAL_GPIO_WritePin(GPIOE,GPIO_PIN_15,GPIO_PIN_SET):HAL_GPIO_WritePin(GPIOE,GPIO_PIN_15,GPIO_PIN_RESET))
 
-#define AFE4490_AFEPDN_2(n)(n?HAL_GPIO_WritePin(GPIOE,GPIO_PIN_14,GPIO_PIN_SET):HAL_GPIO_WritePin(GPIOE,GPIO_PIN_14,GPIO_PIN_RESET))
+//定义AFE4490芯片1操作引脚
+#define AFE4490_STE_1(n)(n?HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_SET):HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_RESET))
+#define AFE4490_AFEPDN_1(n)(n?HAL_GPIO_WritePin(GPIOE,GPIO_PIN_8,GPIO_PIN_SET):HAL_GPIO_WritePin(GPIOE,GPIO_PIN_8,GPIO_PIN_RESET))
+
 
 //定义芯片2操作函数
 void AFE4490_SPI2_Init(void);
@@ -66,6 +70,11 @@ u32 afe4490_Read_2 (u8 address);
 void AFE4490_Reg_Init_2(void);
 	
 
-
+//定义芯片1操作函数
+void AFE4490_SPI1_Init(void);
+void AFE4490_Init_1(void);
+u8 afe4490_Write_1 (u8 address, u32 data);
+u32 afe4490_Read_1 (u8 address);
+void AFE4490_Reg_Init_1(void);
 
 	

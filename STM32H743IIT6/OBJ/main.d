@@ -114,3 +114,4 @@
 ..\obj\main.o: ..\FATFS\exfuns\exfuns.h
 ..\obj\main.o: ..\HARDWARE\afe4490\afe4490.h
 ..\obj\main.o: ..\HARDWARE\SPI\spi.h
+..\obj\main.o: ..\HARDWARE\EXTI\exti.h

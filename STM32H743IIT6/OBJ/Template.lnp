@@ -51,6 +51,7 @@
 "..\obj\w25qxx.o"
 "..\obj\afe4490.o"
 "..\obj\spi.o"
+"..\obj\exti.o"
 "..\obj\malloc.o"
 "..\obj\exfuns.o"
 "..\obj\fattester.o"
